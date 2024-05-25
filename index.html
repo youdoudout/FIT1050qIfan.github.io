@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Small Business Homepage</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="AUBnb Logo">
+                </div>
+                <div class="simple-search-container">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Can't find what you're looking for?" name="query" required>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <nav class="nav-container">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </body>
+
+    <main>
+        <section id="hero-1785" class="hero">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Find Your Perfect Home</span>
+                    <h1 class="cs-title">Discover Your Dream Rental</h1>
+                    <p class="cs-text">
+                        Explore a wide range of rental properties and find the perfect home that suits your lifestyle. Your dream rental is just a few clicks away.
+                    </p>
+                    <div class="cs-button-group">
+                        <a href="#register" class="cs-button-solid cs-button1">Start Now!</a>
+                    </div>
+                </div>
+            </div>
+
+            <button id="prev" class="arrow left-arrow">&lt;</button>
+            <button id="next" class="arrow right-arrow">&gt;</button>
+        </section>
+        
+        <section class="section-header">
+            <h1 class="section-title">Premium Service Apartments and Houses</h1>
+            <p class="section-subtitle">Top performance romantic & Luxury stays with affordable price. Free Foxtel subscription provided.</p>
+        </section>
+        
+        <div class="filter-buttons">
+            <button onclick="filterCards('all')">ALL</button>
+            <button onclick="filterCards('apartment')">Apartment</button>
+            <button onclick="filterCards('house')">House</button>
+        </div>
+        
+        <section id="unique-experiences" class="card-container">
+            <div class="card" data-type="apartment">
+                <img src="images/house1.png" alt="Unique Experience 1">
+                <div class="card-info">
+                    <h2>Deluxe Brighton Apt Private Garden Parking WIFI Smart TV Sanitiser PaperRolls HandWash</h2>
+                    <p>This 3 bedroom, 2 bathroom including ensuite and 1 carpark apartment </p>
+                    <span>$100 AUD per guest</span><br> 
+                    <a href="index.html" class="view-deal-button">View Deal</a>
+                </div>
+            </div>
+
+            <div class="card" data-type="house">
+                <img src="images/house2.png" alt="Unique Experience 2">
+                <div class="card-info">
+                    <h2>Pride Manor South Yarra Apt Free Parking Smart TV</h2>
+                    <p>This 2 bedroom, 2 bathroom including ensuite and 1 carpark apartment</p>
+                    <span>$100 AUD per guest</span><br> 
+                    <a href="index.html" class="view-deal-button">View Deal</a>
+                </div>
+            </div>
+
+            <div class="card" data-type="apartment">
+                <img src="images/house3.png" alt="Unique Experience 3">
+                <div class="card-info">
+                    <h2>Pride Fawkner Apt Bayview PARKING POOL GYM</h2>
+                    <p>This 2 bedroom, 1 bathroom including ensuite and no carpark apartment</p>
+                    <span>$100 AUD per guest</span><br> 
+                    <a href="index.html" class="view-deal-button">View Deal</a>
+                </div>
+            </div>
+            <div class="card" data-type="house">
+                <img src="images/house4.png" alt="Unique Experience 4">
+                <div class="card-info">
+                    <h2>Brilliant Victoria Harbour View Apt Free Parking</h2>
+                    <p>This 2 bedroom, 2 bathroom including ensuite and 1 carpark apartment</p>
+                    <span>$100 AUD per guest</span><br> 
+                    <a href="index.html" class="view-deal-button">View Deal</a>
+                </div>
+            </div>
+            <div class="card" data-type="apartment">
+                <img src="images/house5.png" alt="Unique Experience 5">
+                <div class="card-info">
+                    <h2>Modern Berwick Home WiFi*Smart TV*Garage</h2>
+                    <p>This 2 bedroom, 2 bathroom including ensuite and 2 carpark apartment</p>
+                    <span>$100 AUD per guest</span><br> 
+                    <a href="index.html" class="view-deal-button">View Deal</a>
+                </div>
+            </div>
+            <div class="card" data-type="house">
+                <img src="images/house6.png" alt="Unique Experience 6">
+                <div class="card-info">
+                    <h2>Lux Docklands District 3-level TH *FreeParking</h2>
+                    <p>This 1 bedroom, 2 bathroom including ensuite and 1 carpark apartment</p>
+                    <span>$100 AUD per guest</span><br> 
+                    <a href="index.html" class="view-deal-button">View Deal</a>
+                </div>
+            </div>
+            <div class="card" data-type="apartment">
+                <img src="images/house7.png" alt="Unique Experience 7">
+                <div class="card-info">
+                    <h2>Grand St Kilda 2-story Sub Penthouse At Lucient</h2>
+                    <p>This 1 bedroom, 1 bathroom including ensuite and 1 carpark apartment</p>
+                    <span>$100 AUD per guest</span><br> 
+                    <a href="index.html" class="view-deal-button">View Deal</a>
+                </div>
+            </div>
+            <div class="card" data-type="house">
+                <img src="images/house8.png" alt="Unique Experience 8">
+                <div class="card-info">
+                    <h2>Pride Fawkner Court View 2B 55'SmartTV FreeParking</h2>
+                    <p>This 2 bedroom, 2 bathroom including ensuite and no carpark apartment</p>
+                    <span>$100 AUD per guest</span><br> 
+                    <a href="index.html" class="view-deal-button">View Deal</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="membership-signup">
+            <div class="membership-container">
+                <h2 class="membership-title">Start renting now!</h2>
+                <p class="membership-description">
+                    🏠 Explore our rental platform! 🌟 Enjoy exclusive discounts, get the latest listings, and get personalized home recommendations. Start your rental journey today!
+                </p>
+                <form action="submit-your-form-handler" method="POST" class="membership-form">
+                    <input type="email" placeholder="your email..." name="email" required>
+                    <button type="submit" class="btn btn-join">Sign up now!</button>
+                </form>
+            </div>
+        </section>
+        
+        <footer class="footer-container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#find-homes">FIND HOMES</a></li>
+                    <li><a href="#about-us">ABOUT US</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#faqs">FAQS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="top-bar">
+                <div class="social-icons">
+                    <span class="language"><i class="fas fa-globe-americas"></i> English (AU)</span>
+                    <span class="currency"> $ AUD</span>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <p class="copyright">© 2024 aubnb. All rights reserved.</p>
+        </footer>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
